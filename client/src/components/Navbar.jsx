@@ -18,7 +18,7 @@ const Navbar = ()=>{
            <img src={logo} alt="logo" className="w-32 cursor-pointer"/>
            </div>
            <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-           {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index)=>(         //dynamic array
+           {["Market", "Exchange","Wallets"].map((item, index)=>(         //dynamic array
            <NavbarItem key={item+index} title={item}/>                    //key exist to make it unique
            ))} 
            <li className="bg-[2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
@@ -36,7 +36,7 @@ const Navbar = ()=>{
                  <li className="text-xl w-full my-2">
                  <AiOutlineClose onClick={()=>setToggleMenu(false)}/>
                  </li>
-                 {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index)=>(         //dynamic array
+                 {["Market", "Exchange", "Wallets"].map((item, index)=>(         //dynamic array
            <NavbarItem key={item+index} title={item} classProps="my-2 text-lg"/>                    //key exist to make it unique
            ))} 
                  </ul>
